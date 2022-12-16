@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #777;
+}
+
+.brand,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  img {
+    width: 40px;
+    margin-right: 0.6rem;
+  }
+
+  h2 {
+    transition: 0.2s;
+  }
+
+  &:hover {
+    h2 {
+      color: #dec129;
+    }
+  }
+}
+
+.links {
+  li {
+    margin-right: 1rem;
+    list-style: none;
+  }
+
+  a {
+    padding: 0.1rem 0.3rem;
+
+    &:hover {
+      background-color: #efefef;
+    }
+  }
+}
+
+#add a {
+  color: #dec129;
+}
