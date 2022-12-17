@@ -72,3 +72,71 @@ input {
     padding-left: 0.2rem;
   }
 }
+
+.edit-btn,
+.remove-btn {
+  border: 1px solid #efefef;
+  padding: 0.4rem 1rem;
+
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #fff;
+}
+
+button fa-icon,
+a fa-icon {
+  margin-right: 0.2rem;
+}
+
+@mixin activeButton {
+  color: #fff;
+  background-color: #007bff;
+}
+
+@mixin inactiveButton {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.edit-btn {
+  @include inactiveButton;
+
+  path {
+    @include inactiveButton;
+  }
+
+  &:hover {
+    @include activeButton;
+    path {
+      @include activeButton;
+    }
+  }
+}
+
+@mixin activeButton {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+@mixin inactiveButton {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.remove-btn {
+  @include inactiveButton;
+
+  path {
+    @include inactiveButton;
+  }
+
+  &:hover {
+    @include activeButton;
+
+    path {
+      @include activeButton;
+    }
+  }
+}
