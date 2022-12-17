@@ -47,3 +47,25 @@ a {
     background-color: #efefef;
   }
 }
+
+.search-container {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  form {
+    width: 30%;
+    position: relative;
+  }
+
+  fa-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+
+  input {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
